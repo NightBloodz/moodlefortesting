@@ -1,0 +1,9 @@
+services:
+  webserver:
+    environment:
+      MOODLE_DOCKER_WEB_PORT: "${MOODLE_DOCKER_WEB_PORT}"
+    ports:
+      - "0.0.0.0:${MOODLE_DOCKER_WEB_PORT}:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      

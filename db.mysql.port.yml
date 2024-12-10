@@ -1,0 +1,5 @@
+services:
+  db:
+    ports:
+      - "${MOODLE_DOCKER_DB_PORT}:3306/tcp"
+      - "33060:33060/tcp"
